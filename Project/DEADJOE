@@ -1,0 +1,78 @@
+
+*** These modified files were found in JOE when it aborted on Thu Apr 18 23:13:17 2019
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+
+
+*** File '(Unnamed)'
+matching_bytes.c
+intext.txt
+revstrings.c
+revstrings.c
+mystrspn.c
+matching_bytes
+matching_bytes.c
+revstrings.c
+mystrspn.c
+Project/
+sortedll.c
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Mon Apr 22 19:01:49 2019
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+
+
+*** File '(Unnamed)'
+sortedll.
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu May  2 20:06:10 2019
+*** JOE was aborted by UNIX signal 15
+
+*** File '* Build Log *'
+
+*** File '(Unnamed)'
+
+
+*** File '(Unnamed)'
+alloc_array.h
+alloc_int.c
+alloc_int.c
+main.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+sortedll.c
+* Build Log *
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc

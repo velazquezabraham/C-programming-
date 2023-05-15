@@ -1,0 +1,73 @@
+=========================================
+Project: SortedLL (04/23/2019)
+=========================================
+
+Score: C+
+
+Your AddItem function isn't inserting new items into their correct
+sorted locations, you're just adding to the head of the list. However,
+I can see you were working on proper insertion, even though it's
+commented out.
+
+I tried replacing your AddItem function with my own implementation,
+which allowed me to insert a variety of values into the list, but that
+revealed problems with the RemoveItem function... If the user attempts
+to remove a target from the list that isn't actually in the list,
+RemoveItem falls into an infinite loop, the boolean condition
+controlling the 'while' loop never evaluates to false because
+'localPtr1' isn't being advanced through the list.
+
+Although the main function checks for an empty list when the user
+attempts to remove an item, it would still be a good idea to check for
+a NULL pointer inside the RemoveItem function as a safeguard,
+otherwise the pointer will be dereferenced and produce a segmentation
+fault. By first checking for a NULL pointer, if the main function were
+ever to be modified, or if your linked list functions were to be used
+in a different program, you wouldn't have to worry about the caller
+ever passing a NULL pointer to RemoveItem. Consider it cheap
+insurance.
+
+Your code is looking consistent in its formatting, which certainly
+makes it easier to follow. Good comments in the code, it helps the
+reader unfamiliar with your program follow along easily. One possible
+improvement you might consider is to only indent if you're actually
+beginning a new block. Instead of this:
+
+    //loop through nodes to look for target
+    while(localPtr1)//not null
+        {
+            if( localPtr1->next->value == target )
+                {
+                    auto LNode *localPtr2 = localPtr1->next;//to point to the previous node
+                    localPtr1->next = localPtr1->next->next;//to point to the next node
+                    free(localPtr2);
+                    return headPtr;
+                }
+        }
+
+
+
+try this:
+
+
+
+    //loop through nodes to look for target
+    while (localPtr1)//not null
+        {
+        if ( localPtr1->next->value == target )
+            {
+            auto LNode *localPtr2 = localPtr1->next;
+            localPtr1->next = localPtr1->next->next;
+            free(localPtr2);
+            return headPtr;
+            }
+        }
+
+
+It can help minimize a continual rightward drift beyond column 80.
+
+So you're off to a good start here, but there are still some
+significant problems with your implementation. It would be a very good
+investment to finish this program off and kill the bugs, linked lists
+are fundamental to many programming tasks and you're bound to learn
+some important lessons as a result!
